@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const AboutContainer = styled.div`
     background-color: #efeeff;
-    height: 200px;
+    height: 80vh;
 `;
 
 const About = () => {
