@@ -9,6 +9,10 @@ const HeaderContainer = styled.div`
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    @media (max-width: 660px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const Name = styled.h1`
@@ -21,6 +25,9 @@ const Name = styled.h1`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    @media (max-width: 660px) {
+        align-items: center;
+    }
 `;
 
 const Navbar = styled.ul`
@@ -28,6 +35,9 @@ const Navbar = styled.ul`
     justify-content: space-evenly;
     list-style-type: none;
     flex: 2;
+    @media (max-width: 660px) {
+        width: 80vw;
+    }
 `;
 
 const NavbarItem = styled.li`
