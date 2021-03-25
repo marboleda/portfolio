@@ -11,7 +11,7 @@ import mongodb_logo from '../images/mongodb-logo.png';
 
 const AboutContainer = styled.div`
     background-color: #efeeff;
-    height: 80vh;
+    min-height: 75vh;
     font-family: Helvetica;
 `;
 

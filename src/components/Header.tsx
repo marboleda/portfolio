@@ -13,6 +13,7 @@ const HeaderContainer = styled.div`
         flex-direction: column;
         align-items: center;
     }
+    margin-top: 0;
 `;
 
 const Name = styled.h1`
