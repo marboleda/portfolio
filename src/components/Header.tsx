@@ -46,15 +46,23 @@ const NavbarItem = styled.li`
     font-family: Helvetica;
 `;
 
+const NavbarItemLink = styled.a`
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+`
+
 const Header = () => {
     return(
         <HeaderContainer>
             <Name><span>MARCO</span> <span>ARBOLEDA</span></Name>
             <Navbar>
-                <NavbarItem>About</NavbarItem>
-                <NavbarItem>Projects</NavbarItem>
-                <NavbarItem>Resume</NavbarItem>
-                <NavbarItem>Contact</NavbarItem>
+                <NavbarItem><NavbarItemLink href='#about'>About</NavbarItemLink></NavbarItem>
+                <NavbarItem><NavbarItemLink href='#projects'>Projects</NavbarItemLink></NavbarItem>
+                <NavbarItem><NavbarItemLink href='#resume'>Resume</NavbarItemLink></NavbarItem>
+                <NavbarItem><NavbarItemLink href='#contact'>Contact</NavbarItemLink></NavbarItem>
             </Navbar>
         </HeaderContainer>
     );

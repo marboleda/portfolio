@@ -44,7 +44,7 @@ const SkillImg = styled.img`
 
 const About = () => {
     return (
-        <AboutContainer>
+        <AboutContainer id='about'>
             <AboutText>Hi! I make web apps using the technology below.</AboutText>
             <AboutText>Have a look at my projects and reach out if you think I could be of help to your company!</AboutText>
             <SkillGrid>
