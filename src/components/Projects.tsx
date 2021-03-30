@@ -10,6 +10,7 @@ const ProjectsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    max-width: 100vw;
 `;
 
 const Project = styled.div`
@@ -19,6 +20,10 @@ const Project = styled.div`
     grid-template-rows: 1fr 820px;
     grid-auto-flow: column;
     margin-bottom: 10px;
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 740px auto;
+    }
 `;
 
 const ProjectHeader = styled.h3`
@@ -29,11 +34,21 @@ const ProjectHeader = styled.h3`
 const ProjectPreview = styled.img`
     border: 5px solid #000000;
     border-radius: 10%;
+    @media (max-width: 1200px) {
+        justify-self: center;
+    }
 `;
 
 const ProjectDescription = styled.p`
     padding: 30px 20px 0px 20px;
-    grid-row: span 2;
+    box-sizing: border-box;
+    @media (min-width: 1200px) {
+        grid-row: span 2;
+    }
+    @media (max-width: 1200px) {
+        max-width: 75vw;
+        justify-self: center;
+    }
     font-size: 1.75rem;
     font-family: Helvetica;
     align-self: center;
