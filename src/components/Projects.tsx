@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import inventory_app_preview from '../images/inventory_app_preview.png';
 import memory_game_preview from '../images/memory_game_preview.png';
+import tic_tac_toe_preview from '../images/tic_tac_toe_preview.png';
 
 const ProjectsContainer = styled.div`
     display: flex;
@@ -53,6 +54,17 @@ const Projects = () => {
                     <br /><br />
                     I also made use of the Fisher-Yates shuffling algorithm to shuffle the cards. This is an efficient algorithm as it does not need to create a second array (meaning it is space-efficient)
                         and the runtime is O(n).
+                </ProjectDescription>
+            </Project>
+            <Project>
+                <h3>Tic Tac Toe</h3>
+                <img src={tic_tac_toe_preview} alt='tic tac toe preview' />
+                <ProjectDescription>
+                    This is a Tic Tac Toe game created using vanilla JavaScript <br />
+                    I made use of the Factory Function and Module design patterns to create this app.
+                    <br /><br />
+                    One of the most fun and challenging parts of creating this was the optional goal of implementing a computer AI that is impossible to beat (i.e. at best, you can make the game end in a drew) <br />
+                    I had to learn how to implement the Minimax AI algorithm for this type of game which also gave me an opportunity to practice recursion.
                 </ProjectDescription>
             </Project>
         </ProjectsContainer>
