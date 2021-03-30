@@ -20,6 +20,11 @@ const Project = styled.div`
     grid-auto-flow: column;
 `;
 
+const ProjectPreview = styled.img`
+    border: 5px solid #000000;
+    border-radius: 10%;
+`;
+
 const ProjectDescription = styled.p`
     padding: 30px 20px 0px 20px;
     grid-row: span 2;
@@ -30,7 +35,7 @@ const Projects = () => {
         <ProjectsContainer id='projects'>
             <Project>
                 <h3>Inventory App</h3>
-                <img src={inventory_app_preview} alt='inventory app preview' />
+                <ProjectPreview src={inventory_app_preview} alt='inventory app preview' />
                 <ProjectDescription>
                     This is an inventory management app for an imaginary grocery store (design inspired by Walmart's online grocery section).
                     <br /><br />
@@ -45,7 +50,7 @@ const Projects = () => {
             </Project>
             <Project>
                 <h3>Memory Game</h3>
-                <img src={memory_game_preview} alt='memory game preview' />
+                <ProjectPreview src={memory_game_preview} alt='memory game preview' />
                 <ProjectDescription>
                     This is a memory game where you have to repeatedly choose from a set of cards portraying characters from the Tekken video game franchise without choosing the same character twice.
                     <br /><br />
@@ -58,7 +63,7 @@ const Projects = () => {
             </Project>
             <Project>
                 <h3>Tic Tac Toe</h3>
-                <img src={tic_tac_toe_preview} alt='tic tac toe preview' />
+                <ProjectPreview src={tic_tac_toe_preview} alt='tic tac toe preview' />
                 <ProjectDescription>
                     This is a Tic Tac Toe game created using vanilla JavaScript <br />
                     I made use of the Factory Function and Module design patterns to create this app.
