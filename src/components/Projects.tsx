@@ -18,6 +18,12 @@ const Project = styled.div`
     grid-template-columns: 420px 1fr;
     grid-template-rows: 1fr 820px;
     grid-auto-flow: column;
+    margin-bottom: 10px;
+`;
+
+const ProjectHeader = styled.h3`
+    font-size: 2rem;
+    font-family: Helvetica;
 `;
 
 const ProjectPreview = styled.img`
@@ -28,13 +34,16 @@ const ProjectPreview = styled.img`
 const ProjectDescription = styled.p`
     padding: 30px 20px 0px 20px;
     grid-row: span 2;
+    font-size: 1.75rem;
+    font-family: Helvetica;
+    align-self: center;
 `;
 
 const Projects = () => {
     return (
         <ProjectsContainer id='projects'>
             <Project>
-                <h3>Inventory App</h3>
+                <ProjectHeader>Inventory App</ProjectHeader>
                 <ProjectPreview src={inventory_app_preview} alt='inventory app preview' />
                 <ProjectDescription>
                     This is an inventory management app for an imaginary grocery store (design inspired by Walmart's online grocery section).
@@ -49,7 +58,7 @@ const Projects = () => {
                 </ProjectDescription>
             </Project>
             <Project>
-                <h3>Memory Game</h3>
+                <ProjectHeader>Memory Game</ProjectHeader>
                 <ProjectPreview src={memory_game_preview} alt='memory game preview' />
                 <ProjectDescription>
                     This is a memory game where you have to repeatedly choose from a set of cards portraying characters from the Tekken video game franchise without choosing the same character twice.
@@ -62,7 +71,7 @@ const Projects = () => {
                 </ProjectDescription>
             </Project>
             <Project>
-                <h3>Tic Tac Toe</h3>
+                <ProjectHeader>Tic Tac Toe</ProjectHeader>
                 <ProjectPreview src={tic_tac_toe_preview} alt='tic tac toe preview' />
                 <ProjectDescription>
                     This is a Tic Tac Toe game created using vanilla JavaScript <br />
