@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import linkedInLogo from '../images/li-logo.svg';
 
@@ -14,16 +16,20 @@ const ContactHeader = styled.h2`
 `;
 
 const ContactImage = styled.img`
-    height: 64px;
+    height: 60px;
+    margin: 0 10px;
 `;
 
+const ContactLink = styled.a`
+    color: inherit;
+`
 
 const Contact = () => {
     return(
         <ContactContainer id='contact'>
             <ContactHeader>Contact Me:</ContactHeader>
-            <a href='https://www.linkedin.com/in/marco-arboleda/'><ContactImage src={linkedInLogo} alt="LinkedIn"></ContactImage></a>
-            <p>Email: arboleda.marco@gmail.com</p>
+            <ContactLink href='https://www.linkedin.com/in/marco-arboleda/'><ContactImage src={linkedInLogo} alt="LinkedIn"></ContactImage></ContactLink>
+            <ContactLink href='mailto:arboleda.marco@gmail.com'><FontAwesomeIcon size='5x' icon={faEnvelope}></FontAwesomeIcon></ContactLink>
         </ContactContainer>
     );
 }
