@@ -13,6 +13,7 @@ const AboutContainer = styled.div`
     background-color: #efeeff;
     min-height: 75vh;
     font-family: Helvetica;
+    padding-top: 20px;
 `;
 
 const AboutText = styled.p`
