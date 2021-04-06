@@ -37,6 +37,9 @@ const ProjectPreview = styled.img`
     @media (max-width: 1200px) {
         justify-self: center;
     }
+    @media (max-width: 520px) {
+        width: 80vw;
+    }
 `;
 
 const ProjectDescription = styled.p`
