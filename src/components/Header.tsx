@@ -61,8 +61,8 @@ const Header = () => {
             <Navbar>
                 <NavbarItem><NavbarItemLink href='#about'>About</NavbarItemLink></NavbarItem>
                 <NavbarItem><NavbarItemLink href='#projects'>Projects</NavbarItemLink></NavbarItem>
-                <NavbarItem><NavbarItemLink href='#resume'>Resume</NavbarItemLink></NavbarItem>
                 <NavbarItem><NavbarItemLink href='#contact'>Contact</NavbarItemLink></NavbarItem>
+                <NavbarItem><NavbarItemLink href='https://github.com/marboleda'>GitHub</NavbarItemLink></NavbarItem>
             </Navbar>
         </HeaderContainer>
     );
