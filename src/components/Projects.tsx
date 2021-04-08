@@ -68,9 +68,16 @@ const ProjectButton = styled.button`
     font-size: 2rem;
     font-family: Helvetica;
     margin: 0 5px;
+    &:hover {
+        cursor: pointer;
+    }
 `;
 
 const Projects = () => {
+
+    const codeRootPath = 'https://github.com/marboleda/';
+    const demoRootPath = 'https://marboleda.github.io/'
+
     return (
         <ProjectsContainer id='projects'>
             <Project>
@@ -88,8 +95,8 @@ const Projects = () => {
                         Having to make API calls meant that I leveraged the useEffect hook to simulate the same behaviour as lifecycle components and got a lot of practice with it. <br />
                         This project also helped solidify my knowledge of doing C.R.U.D. operations (Create, Read, Update, Delete) on a back-end database.
                     </ProjectDescription>
-                    <ProjectButton>Code</ProjectButton>
-                    <ProjectButton>Demo</ProjectButton>
+                    <a href={`${codeRootPath}inventory-application`} target='blank'><ProjectButton>Code</ProjectButton></a>
+                    <a href='https://shielded-island-77030.herokuapp.com/' target='blank'><ProjectButton>Demo</ProjectButton></a>
                 </ProjectInfo>
             </Project>
             <Project>
@@ -105,8 +112,8 @@ const Projects = () => {
                         I also made use of the Fisher-Yates shuffling algorithm to shuffle the cards. This is an efficient algorithm as it does not need to create a second array (meaning it is space-efficient)
                             and the runtime is O(n).
                     </ProjectDescription>
-                    <ProjectButton>Code</ProjectButton>
-                    <ProjectButton>Demo</ProjectButton>                   
+                    <a href={`${codeRootPath}memory-card-game`} target='blank'><ProjectButton>Code</ProjectButton></a>
+                    <a href={`${demoRootPath}memory-card-game`} target='blank'><ProjectButton>Demo</ProjectButton></a>
                 </ProjectInfo>
             </Project>
             <Project>
@@ -120,8 +127,8 @@ const Projects = () => {
                         One of the most fun and challenging parts of creating this was the optional goal of implementing a computer AI that is impossible to beat (i.e. at best, you can make the game end in a drew) <br />
                         I had to learn how to implement the Minimax AI algorithm for this type of game which also gave me an opportunity to practice recursion.
                     </ProjectDescription>
-                    <ProjectButton>Code</ProjectButton>
-                    <ProjectButton>Demo</ProjectButton>                   
+                    <a href={`${codeRootPath}tic-tac-toe`} target='blank'><ProjectButton>Code</ProjectButton></a>
+                    <a href={`${demoRootPath}tic-tac-toe`} target='blank'><ProjectButton>Demo</ProjectButton></a>              
                 </ProjectInfo>
             </Project>
         </ProjectsContainer>
