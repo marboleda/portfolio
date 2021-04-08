@@ -22,7 +22,7 @@ const Project = styled.div`
     margin-bottom: 20px;
     @media (max-width: 1200px) {
         grid-template-columns: 1fr;
-        grid-template-rows: auto 740px auto;
+        grid-template-rows: auto auto auto;
     }
 `;
 
@@ -58,6 +58,9 @@ const ProjectDescription = styled.p`
     box-sizing: border-box;
     font-size: 1.75rem;
     font-family: Helvetica;
+    @media (max-width: 520px) {
+        font-size: 1.25rem;
+    }
 `;
 
 const ProjectButton = styled.button`
