@@ -66,6 +66,10 @@ const ProjectButton = styled.button`
     width: 30%;
     height: 3rem;
     font-size: 2rem;
+    @media (max-width:440px) {
+        font-size: 100%;
+        font-weight: bold;
+    }
     font-family: Helvetica;
     margin: 0 5px;
     &:hover {
