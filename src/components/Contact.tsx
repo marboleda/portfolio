@@ -20,6 +20,7 @@ const ContactImage = styled.img`
 
 const ContactLink = styled.a`
     color: inherit;
+    text-decoration: none;
 `;
 
 const EnvelopeIcon = styled.span`
