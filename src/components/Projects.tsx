@@ -128,8 +128,8 @@ const Projects = () => {
                         This is a Tic Tac Toe game created using vanilla JavaScript <br />
                         I made use of the Factory Function and Module design patterns to create this app.
                         <br /><br />
-                        One of the most fun and challenging parts of creating this was the optional goal of implementing a computer AI that is impossible to beat (i.e. at best, you can make the game end in a drew) <br />
-                        I had to learn how to implement the Minimax AI algorithm for this type of game which also gave me an opportunity to practice recursion.
+                        One of the most fun and challenging parts of creating this was the optional goal of implementing a computer AI that is impossible to beat (i.e. at best, you can make the game end in a draw) <br />
+                        I learned how to implement the Minimax AI algorithm for this type of game which also gave me an opportunity to practice recursion.
                     </ProjectDescription>
                     <a href={`${codeRootPath}tic-tac-toe`} target='blank'><ProjectButton>Code</ProjectButton></a>
                     <a href={`${demoRootPath}tic-tac-toe`} target='blank'><ProjectButton>Demo</ProjectButton></a>              
