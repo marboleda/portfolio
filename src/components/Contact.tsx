@@ -32,7 +32,7 @@ const Contact = () => {
     return(
         <ContactContainer id='contact'>
             <ContactHeader>Contact Me:</ContactHeader>
-            <ContactLink href='https://www.linkedin.com/in/marco-arboleda/'><ContactImage src={linkedInLogo} alt="LinkedIn"></ContactImage></ContactLink>
+            <ContactLink href='https://www.linkedin.com/in/marco-arboleda/'><ContactImage src={linkedInLogo} alt="LinkedIn" /></ContactLink>
             <ContactLink href='mailto:arboleda.marco@gmail.com'><EnvelopeIcon>&#9993;</EnvelopeIcon></ContactLink>
         </ContactContainer>
     );

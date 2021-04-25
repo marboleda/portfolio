@@ -49,12 +49,12 @@ const About = () => {
             <AboutText>Hi! I make web apps using the technology below.</AboutText>
             <AboutText>Have a look at my projects and reach out if you think I could be of help to your company!</AboutText>
             <SkillGrid>
-                <SkillCard><SkillImg src={js_logo}></SkillImg>JavaScript</SkillCard>
-                <SkillCard><SkillImg src={react_logo}></SkillImg>React</SkillCard>
-                <SkillCard><SkillImg src={html_logo}></SkillImg>HTML</SkillCard>
-                <SkillCard><SkillImg src={css_logo}></SkillImg>CSS</SkillCard>
-                <SkillCard><SkillImg src={node_logo}></SkillImg>Node.js</SkillCard>
-                <SkillCard><SkillImg src={mongodb_logo}></SkillImg>MongoDB</SkillCard>
+                <SkillCard><SkillImg src={js_logo} />JavaScript</SkillCard>
+                <SkillCard><SkillImg src={react_logo} />React</SkillCard>
+                <SkillCard><SkillImg src={html_logo} />HTML</SkillCard>
+                <SkillCard><SkillImg src={css_logo} />CSS</SkillCard>
+                <SkillCard><SkillImg src={node_logo} />Node.js</SkillCard>
+                <SkillCard><SkillImg src={mongodb_logo} />MongoDB</SkillCard>
             </SkillGrid>
         </AboutContainer>
     )
