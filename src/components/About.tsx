@@ -47,7 +47,7 @@ const About = () => {
     return (
         <AboutContainer id='about'>
             <AboutText>Hi! I make web apps using the technology below.</AboutText>
-            <AboutText>Have a look at my projects and reach out if you think I could be of help to your company!</AboutText>
+            <AboutText>Have a look at my projects and reach out if you think I could be of help to your team!</AboutText>
             <SkillGrid>
                 <SkillCard><SkillImg src={js_logo} />JavaScript</SkillCard>
                 <SkillCard><SkillImg src={react_logo} />React</SkillCard>

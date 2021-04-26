@@ -97,7 +97,7 @@ const Projects = () => {
                         <br /><br />
                         I created this with the help of Node.js, Express, MongoDB, and React. 
                         <br /><br />
-                        This was my first time trying to use React with a back-end database and I learned a lot in the process, such as making API calls in the useEffect hook to simulate the same behaviour as lifecycle components.
+                        This was my first time using React with a back-end database and I learned a lot in the process, such as making API calls in the useEffect hook to simulate the same behaviour as lifecycle components.
                         <br /><br />
                         This project also helped solidify my knowledge of doing C.R.U.D. operations (Create, Read, Update, Delete) on a back-end database.
                     </ProjectDescription>
@@ -128,7 +128,7 @@ const Projects = () => {
                 <ProjectPreview src={tic_tac_toe_preview} alt='tic tac toe preview' />
                 <ProjectInfo>
                     <ProjectDescription>
-                        This is a Tic Tac Toe game created using vanilla JavaScript <br />
+                        This is a Tic Tac Toe game created using vanilla JavaScript. <br />
                         I made use of the Factory Function and Module design patterns to create this app.
                         <br /><br />
                         One of the most fun and challenging parts of creating this was the optional goal of implementing a computer AI that is impossible to beat (i.e. at best, you can make the game end in a draw) 
